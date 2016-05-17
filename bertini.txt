@@ -21,3 +21,17 @@ Accepts underdetermined, exactly determined, and overdetermined systems (i.e., t
 
 Preservation with Umbrella
 Note that although Bertini software can be used with MPI, this Umbrella spec doesn't utilize MPI and runs Bertini in single process mode. The software is fully functional, although it may take longer to solve a system of equations.
+
+Creating Umbrella specification
+http://umbrella.basicuserinterface.com/
+User: demo
+Password: demo
+
+How to run:
+sudo umbrella \
+--spec bertini.umbrella \
+--localdir /tmp/alex/umbrella_test/ \
+--output "/tmp=/tmp/alex/umbrella_test/bertini_output" \
+--sandbox_mode docker \
+--log umbrella.log \
+run
