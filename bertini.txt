@@ -1,0 +1,23 @@
+Bertini v1.5: Software for Numerical Algebraic Geometry (solving polynomial systems)
+http://bertini.nd.edu/
+
+Bertini is a general-purpose solver, written in C, that was created for research about polynomial continuation. It is designed to find numerical solution of systems of polynomial equations.
+
+Approach: Homotopy continuation.
+Authors: Daniel J. Bates, Jonathan D. Hauenstein, Andrew J. Sommese, Charles W. Wampler
+
+Key features:
+
+Finds isolated solutions using total-degree start systems, multihomogeneous-degree start systems, and also user defined homotopies.
+Implements parameter continuation for families of systems, such as the inverse kinematics of six-revolute serial-link arms, or the forward kinematics of Stewart-Gough parallel-link robots.
+Adaptive multiprecision implemented for finding isolated solutions and for the numerical irreducible decomposition.
+Treats positive-dimensional solutions by computing witness sets.
+Has automatic differentiation which preserves the straightline quality of an input system.
+Uses homogenization to accurately compute solutions "at infinity."
+Provides endgames to accurately compute singular roots.
+Allows for subfunctions.
+Allows for witness set manipulation via both sampling and membership testing.
+Accepts underdetermined, exactly determined, and overdetermined systems (i.e., the number of variables and equations do not have to be equal).
+
+Preservation with Umbrella
+Note that although Bertini software can be used with MPI, this Umbrella spec doesn't utilize MPI and runs Bertini in single process mode. The software is fully functional, although it may take longer to solve a system of equations.
